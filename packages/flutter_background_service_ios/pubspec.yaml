@@ -14,7 +14,7 @@ dependencies:
   flutter_background_service_platform_interface:
     git:
       url: https://github.com/J3S/flutter_background_service.git
-      ref: probar_con_fork
+      ref: feat/support_multiple_foreground_service_types
       path: packages/flutter_background_service_platform_interface
 dev_dependencies:
   flutter_test:
