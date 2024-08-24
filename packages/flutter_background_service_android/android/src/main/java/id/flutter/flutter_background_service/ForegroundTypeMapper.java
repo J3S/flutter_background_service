@@ -30,9 +30,13 @@ public class ForegroundTypeMapper {
         System.out.println(ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST);
         Integer foregroundServiceType = ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST;
         if (foregroundTypes != null && foregroundTypes.length > 0) {
+            System.out.println("ENTRANDO PARA DEFINIR LOS NUEVOS");
             for (String foregroundType : foregroundTypes) {
+                System.out.println(foregroundType);
+                System.out.println(foregroundTypeMap.get(foregroundType));
                 foregroundServiceType |= foregroundTypeMap.get(foregroundType);
             }
+            System.out.println("FINNNNNNNN ENTRANDO PARA DEFINIR LOS NUEVOS");
         }
         System.out.println(foregroundServiceType);
         return foregroundServiceType;
