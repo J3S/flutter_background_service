@@ -14,7 +14,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_background_service_platform_interface: ^5.1.1
+  flutter_background_service_platform_interface:
+    git:
+      url: https://github.com/J3S/flutter_background_service.git
+      ref: probar_con_fork
+      path: packages/flutter_background_service_platform_interface
   flutter_background_service_android:
     git:
       url: https://github.com/J3S/flutter_background_service.git
