@@ -26,12 +26,15 @@ public class ForegroundTypeMapper {
     }
 
     public static Integer getForegroundServiceType(String[] foregroundTypes) {
+        System.out.println("VERIFICANDO TIPOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+        System.out.println(ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST);
         Integer foregroundServiceType = ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST;
         if (foregroundTypes != null && foregroundTypes.length > 0) {
             for (String foregroundType : foregroundTypes) {
                 foregroundServiceType |= foregroundTypeMap.get(foregroundType);
             }
         }
+        System.out.println(foregroundServiceType);
         return foregroundServiceType;
     }
 }
